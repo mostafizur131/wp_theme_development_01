@@ -23,8 +23,15 @@ function mr_css_js_file_calling()
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array(), '5.0.2', 'true');
     wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array(), '1.0.0', 'true');
 }
-
 add_action('wp_enqueue_scripts', 'mr_css_js_file_calling');
+
+
+//Google Fonts Enqueue
+function mr_add_google_fonts()
+{
+    wp_enqueue_style('mr_google_fonts', 'https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Oswald&display=swap', false);
+}
+add_action('wp_enqueue_scripts', 'mr_add_google_fonts');
 
 //Theme Function
 function mr_customize_register($wp_customize)
@@ -37,7 +44,7 @@ function mr_customize_register($wp_customize)
     ));
 
     $wp_customize->add_setting('mr_logo', array(
-        'default' => get_bloginfo('template_directory') . '/img/logoD.png',
+        'default' => get_bloginfo('template_directory') . '/img/logo.png',
     ));
 
     $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'mr_logo', array(
@@ -49,3 +56,7 @@ function mr_customize_register($wp_customize)
 }
 
 add_action('customize_register', 'mr_customize_register');
+
+
+//Register Nav Menu
+register_nav_menu('main_menu', __('Main Menu'), 'tahsin');

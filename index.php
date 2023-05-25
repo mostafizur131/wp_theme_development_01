@@ -17,15 +17,44 @@
 </head>
 
 <body>
-    <div id="header_area"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <a href=""><img src="<?php echo get_theme_mod('mr_logo'); ?>" alt="logo"></a>
+    <div id="header_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href=""><img src="<?php echo get_theme_mod('mr_logo'); ?>" alt="logo"></a>
+                </div>
+                <div class="col-md-9">
+                    <?php wp_nav_menu(array('theme_location' => 'main_menu', 'menu_id' => 'nav')); ?>
+
+                    <!-- Static Nav Menu -->
+                    <!-- <ul id="nav">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About US</a></li>
+                        <li><a href="">Media</a></li>
+                        <li><a href="">Download</a></li>
+                        <li><a href="">Project</a></li>
+                        <li><a href="">Services</a>
+                            <ul>
+                                <li><a href="">Dropdown</a></li>
+                                <li><a href="">Dropdown</a>
+                                    <ul>
+                                        <li><a href="">Dropdown</a></li>
+                                        <li><a href="">Dropdown</a></li>
+                                        <li><a href="">Dropdown</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Dropdown</a></li>
+                                <li><a href="">Dropdown</a></li>
+                                <li><a href="">Dropdown</a></li>
+                                <li><a href="">Dropdown</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul> -->
+                </div>
             </div>
-            <div class="col-md-9"></div>
         </div>
-    </div>
     </div>
 
 
