@@ -54,7 +54,7 @@ function mr_customize_register($wp_customize)
 
     // Menu Position
     $wp_customize->add_section('mr_menu_option', array(
-        'title' => __('Menu Position Option'),
+        'title' => __('Menu Position Option', 'tahsin'),
         'description' => "If you interested to change your menu position, You can do it here.",
     ));
 
@@ -74,8 +74,23 @@ function mr_customize_register($wp_customize)
             'center_menu' => 'Center Menu',
         ),
     ));
-}
 
+    // Copyright Area
+    $wp_customize->add_section('mr_copyright_option', array(
+        'title' => __('Footer Option', 'tahsin'),
+        'description' => "If you interested to change or update Copyright, You can do it here."
+    ));
+    $wp_customize->add_setting('mr_copyright', array(
+        'default' => '&copy; Copyright 2023 | Tahsin'
+    ));
+    $wp_customize->add_control('mr_copyright', array(
+        'label' => 'Copyright Text',
+        'description' => 'You can update your Copyright Text from here',
+        'setting' => 'mr_copyright',
+        'section' => 'mr_copyright_option',
+
+    ));
+}
 add_action('customize_register', 'mr_customize_register');
 
 

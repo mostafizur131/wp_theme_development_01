@@ -72,7 +72,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <p></p>
+                        <p><?php echo get_theme_mod('mr_copyright') ?></p>
                     </div>
                 </div>
             </div>
