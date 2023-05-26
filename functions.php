@@ -22,3 +22,5 @@ include_once('inc/widgets_register.php');
 
 //Custom Post or Services Register
 include_once('inc/custom_post.php');
+//Custom Shortcode Register
+include_once('inc/shortcode.php');
