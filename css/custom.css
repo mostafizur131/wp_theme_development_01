@@ -146,6 +146,46 @@ img{
     text-align: left;
 }
 
+/*================================
+Index Page Style
+==================================*/
+#body_area{
+    padding: 45px 0;
+}
+
+#body_area .blog_area {
+    width: 100%;
+    margin-bottom: 15px;
+}
+#body_area .post_thumb {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+#body_area .post_thumb img {
+    width: 100%;
+    display: block;
+    transition: .5s;
+}
+#body_area .post_thumb img:hover {
+    transform: scale(1.2);
+}
+#body_area .post_details {
+    width: 100%;
+    margin-bottom: 15px;
+}
+#body_area .post_details h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+#body_area .post_details h2 a{
+    color: #262626;
+    text-decoration: none;
+    transition: .5s;
+}
+#body_area .post_details h2 a:hover{
+    color: #ea1a70;
+}
 /* Footer area */
 
 /* Copyright Section */
