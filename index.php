@@ -45,8 +45,7 @@
 
             </div>
             <div class="col-md-3">
-                <h3>This is Sidebar</h3>
-                <h5>Coming soon</h5>
+                <?php get_sidebar(); ?>
             </div>
         </div>
     </div>

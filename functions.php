@@ -18,3 +18,6 @@ include_once('inc/theme_function.php');
 
 //Register Nav Menu
 include_once('inc/menu_register.php');
+
+//Widgets Register
+include_once('inc/widgets_register.php');
