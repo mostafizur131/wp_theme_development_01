@@ -528,3 +528,18 @@ Footer Area Style
 .comment-form .comment-form-cookies-consent label {
     display: inline;
 }
+
+/* ==========================================================================
+   Service/front page Area
+========================================================================== */
+
+#service_area {
+    padding: 45px 0;
+}
+
+#service_area .child_service {
+    background: #ddd;
+    box-shadow: 0 0 10px #ddd;
+    padding: 15px;
+    border-radius: 15px;
+}
