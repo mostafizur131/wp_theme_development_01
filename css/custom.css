@@ -12,6 +12,21 @@ img{
     max-width: 100%;
 }
 
+a.readmore{
+    color: #fff;
+    background-color: #ea1a70;
+    font-size: 15px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    transition: .3s;
+}
+
+a.readmore:hover{
+    background-color: #e45993;
+}
+
 /* Header Area */
 #header_area{
     padding: 15px 0;
