@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This template for archive/category post
+ * This template for search result
  */
 
 ?>
@@ -12,9 +12,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <div class="archive_title">
-                    <?php the_archive_title('<h1 class="title">', '</h1>') ?>
-                    <?php the_author_meta('<div class="description">', '</div>'); ?>
+                <div class="search_title">
+                    <h1 class="title">
+                        <?php printf(__('Search Result for: %s', 'tahsin'), get_search_query()) ?>
+                    </h1>
                 </div>
                 <?php get_template_part('/template_parts/blog_setup') ?>
             </div>
