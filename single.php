@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The main Template
+ * This Template for displaying all post details
  */
 
 ?>
@@ -12,11 +12,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <div class="archive_title">
-                    <?php the_archive_title('<h1 class="title">', '</h1>') ?>
-                    <?php the_author_meta('<div class="description">', '</div>'); ?>
+                <?php get_template_part('/template_parts/post_setup') ?>
+                <div id="comments_area">
+                    <?php comments_template(); ?>
                 </div>
-                <?php get_template_part('/template_parts/blog_setup') ?>
+
             </div>
             <div class="col-md-3">
                 <?php get_sidebar(); ?>
@@ -26,4 +26,4 @@
 </section>
 
 <?php get_footer() ?>
-<p>Source: From archive.php</p>
+<p>Source: From single.php</p>
