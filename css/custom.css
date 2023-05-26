@@ -3,6 +3,12 @@ body{
 }
 
 /* === Common CSS === */
+:root{
+    --pink: #ea1a70;
+}
+
+
+
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Oswald', sans-serif;
     line-height: 1.2em;
@@ -14,7 +20,7 @@ img{
 
 a.readmore{
     color: #fff;
-    background-color: #ea1a70;
+    background-color: var(--pink);
     font-size: 15px;
     padding: 7px 15px;
     display: inline-block;
@@ -57,7 +63,7 @@ a.readmore:hover{
 }
 
 #header_area .col-md-9 ul li a:hover {
-    background: #ea1a70;
+    background: var(--pink);
     color: #fff;
 }
 
@@ -91,7 +97,7 @@ a.readmore:hover{
 }
 
 #header_area .col-md-9 ul li:hover a {
-    background: #ea1a70;
+    background: var(--pink);
     color: #fff;
 }
 
@@ -116,7 +122,7 @@ a.readmore:hover{
 }
 
 #header_area .col-md-9 ul li ul li:hover a {
-    background: #ea1a70;
+    background: var(--pink);
     color: #fff;
 }
 
@@ -126,7 +132,7 @@ a.readmore:hover{
 }
 
 #header_area .col-md-9 ul ul li ul li a:hover {
-    background: #ea1a70;
+    background: var(--pink);
     color: #fff;
 }
 
@@ -201,7 +207,7 @@ Index Page Style
     transition: .5s;
 }
 #body_area .post_details h2 a:hover{
-    color: #ea1a70;
+    color: var(--pink);
 }
 
 /*================================
@@ -215,7 +221,7 @@ Sidebar Area Style
     font-size: 30px;
     line-height: 1em;
     margin-bottom: 0;
-    border-left: 7px solid #ea1a70;
+    border-left: 7px solid var(--pink);
     padding-left: 15px;
 }
 
@@ -226,9 +232,9 @@ Sidebar Area Style
 }
 
 .child_sidebar button[type="submit"] {
-    background: #ea1a70;
+    background: var(--pink);
     color: #fff;
-    border: 1px solid #ea1a70;
+    border: 1px solid var(--pink);
     padding: 10px;
     margin: 0;
     transition: .5s;
@@ -258,12 +264,12 @@ Sidebar Area Style
 }
 
 .child_sidebar ul li a:hover {
-    color: #ea1a70;
+    color: var(--pink);
 }
 
 .child_sidebar a.tag-cloud-link {
     color: #fff;
-    background: #ea1a70;
+    background: var(--pink);
     display: inline-block;
     font-size: 12px !important;
     text-decoration: none;
@@ -280,7 +286,7 @@ Post Page Pagination Style
 ==================================*/
 
 #page_nav p.pages{
-    background-color: #ea1a70;
+    background-color: var(--pink);
     color: #fff;
     padding: 5px 10px;
 }
@@ -291,7 +297,7 @@ Post Page Pagination Style
 }
 
 #page_nav .page-numbers{
-    background: #ea1a70;
+    background: var(--pink);
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -308,7 +314,7 @@ Post Page Pagination Style
   Archive and Search Styling
 ===========================================*/
 .archive_title, .search_title {
-    background: #ea1a70;
+    background: var(--pink);
     color: #fff;
     padding: 10px;
     margin-bottom: 10px;

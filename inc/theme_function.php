@@ -55,5 +55,52 @@ function mr_customize_register($wp_customize)
         'section' => 'mr_copyright_option',
 
     ));
+
+
+    //Theme color customize functionality
+    $wp_customize->add_section('mr_colors', array(
+        'title' => __('Theme Color', 'tahsin'),
+        'description' => "If you interested to change or update theme colors, You can do it here."
+    ));
+
+    $wp_customize->add_setting('mr_bg_color', array(
+        'default' => "#ffffff",
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'mr_bg_color', array(
+        'label' => 'Background Color',
+        'setting' => 'mr_bg_color',
+        'section' => 'mr_colors',
+    )));
+
+    $wp_customize->add_setting(
+        'mr_primary_color',
+        array(
+            'default' => "#ea1a70",
+        )
+    );
+
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'mr_primary_color', array(
+        'label' => 'Primary Color',
+        'setting' => 'mr_primary_color',
+        'section' => 'mr_colors',
+    )));
 }
 add_action('customize_register', 'mr_customize_register');
+
+//Theme colors added to head
+function mr_theme_color_cus()
+{
+?>
+    <style>
+        body {
+            background: <?php echo get_theme_mod('mr_bg_color'); ?>
+        }
+
+        :root {
+            --pink: <?php echo get_theme_mod('mr_primary_color'); ?>
+        }
+    </style>
+<?php
+}
+add_action('wp_head', 'mr_theme_color_cus');
