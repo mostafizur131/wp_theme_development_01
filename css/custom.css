@@ -17,7 +17,6 @@ a.readmore{
     background-color: #ea1a70;
     font-size: 15px;
     padding: 7px 15px;
-    border-radius: 5px;
     display: inline-block;
     text-decoration: none;
     transition: .3s;
@@ -171,6 +170,8 @@ Index Page Style
 #body_area .blog_area {
     width: 100%;
     margin-bottom: 15px;
+    background-color: #f3f2f2;
+    padding: 15px;
 }
 #body_area .post_thumb {
     width: 100%;
@@ -201,6 +202,45 @@ Index Page Style
 #body_area .post_details h2 a:hover{
     color: #ea1a70;
 }
+
+/*================================
+Post Page Pagination Style
+==================================*/
+
+#page_nav p.pages{
+    background-color: #ea1a70;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+#page_nav p.pages span{
+    display: inline-block;
+    padding: 0 5px;
+}
+
+#page_nav .page-numbers{
+    background: #ea1a70;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    transition: .5s;
+}
+
+#page_nav .page-numbers.current, #page_nav .page-numbers:hover{
+    background-color: #252323;
+}
+
+
+
+
+
+
+
+
+
+
 /* Footer area */
 
 /* Copyright Section */

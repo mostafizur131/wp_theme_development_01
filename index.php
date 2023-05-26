@@ -34,6 +34,15 @@
                 endif;
                 ?>
 
+                <div id="page_nav">
+                    <?php if ('mr_page_nav') {
+                        mr_page_nav();
+                    } else { ?>
+                        <?php next_post_link(); ?>
+                        <?php previous_post_link(); ?>
+                    <?php } ?>
+                </div>
+
             </div>
             <div class="col-md-3">
                 <h3>This is Sidebar</h3>
