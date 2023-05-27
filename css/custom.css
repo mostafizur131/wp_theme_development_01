@@ -1,567 +1,569 @@
-body{
-    font-family: 'Kaisei Decol', serif;
+body {
+  font-family: "Kaisei Decol", serif;
 }
 
 /* === Common CSS === */
-:root{
-    --pink: #ea1a70;
+:root {
+  --pink: #ea1a70;
 }
 
-
-
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Oswald', sans-serif;
-    line-height: 1.2em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.2em;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-a.readmore{
-    color: #fff;
-    background-color: var(--pink);
-    font-size: 15px;
-    padding: 7px 15px;
-    display: inline-block;
-    text-decoration: none;
-    transition: .3s;
+a.readmore {
+  color: #fff;
+  background-color: var(--pink);
+  font-size: 15px;
+  padding: 7px 15px;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-a.readmore:hover{
-    background-color: #e45993;
+a.readmore:hover {
+  background-color: #e45993;
 }
 
-.button{
-    background: var(--pink);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    text-decoration: none;
-    font-size: 15px;
+.button {
+  background: var(--pink);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
 }
-.button:hover{
-    color: #fff;
+.button:hover {
+  color: #fff;
 }
-
-
 
 /* Header Area */
-#header_area{
-    padding: 15px 0;
+#header_area {
+  padding: 15px 0;
 }
 #header_area .col-md-3 img {
-    height: 70%;
+  height: 70%;
 }
 /* Navigation Menu */
 #header_area .col-md-9 ul {
-    font-family: "Oswald", sans-serif;
-    margin: 10px 0 0;
-    padding: 0;
-    list-style: none;
-    text-align: right;
-    z-index: 9999999;
+  font-family: "Oswald", sans-serif;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+  z-index: 9999999;
 }
 
 #header_area .col-md-9 ul li {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
 
 #header_area .col-md-9 ul li a {
-    color: #262626;
-    padding: 20px 10px;
-    display: block;
-    text-transform: uppercase;
-    text-decoration: none;
+  color: #262626;
+  padding: 20px 10px;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 #header_area .col-md-9 ul li a:hover {
-    background: var(--pink);
-    color: #fff;
+  background: var(--pink);
+  color: #fff;
 }
 
 /*Dropdown Menu*/
 #header_area .col-md-9 ul li ul {
-    background: #262626 none repeat scroll 0 0;
-    left: -99999px;
-    margin: 0;
-    position: absolute;
-    text-align: left;
-    top: 62px;
-    width: 200px;
+  background: #262626 none repeat scroll 0 0;
+  left: -99999px;
+  margin: 0;
+  position: absolute;
+  text-align: left;
+  top: 62px;
+  width: 200px;
 }
 
 #header_area .col-md-9 ul li:hover ul {
-    left: 0px;
+  left: 0px;
 }
 
 #header_area .col-md-9 ul li ul li {
-    display: block;
+  display: block;
 }
 
 #header_area .col-md-9 ul li ul li a {
-    color: #fff;
-    padding: 8px 10px;
+  color: #fff;
+  padding: 8px 10px;
 }
 
 #header_area .col-md-9 ul li ul li a:hover {
-    background: #ddd;
-    color: #262626;
+  background: #ddd;
+  color: #262626;
 }
 
 #header_area .col-md-9 ul li:hover a {
-    background: var(--pink);
-    color: #fff;
+  background: var(--pink);
+  color: #fff;
 }
 
 #header_area .col-md-9 ul li:hover ul li a {
-    background: none;
-    color: #fff;
+  background: none;
+  color: #fff;
 }
 
 /*Sub Dropdown Menu*/
 #header_area .col-md-9 ul li ul ul {
-    left: -99999px;
-    top: 0;
-    position: absolute;
+  left: -99999px;
+  top: 0;
+  position: absolute;
 }
 
 #header_area .col-md-9 ul li:hover ul li ul {
-    left: -999999px;
+  left: -999999px;
 }
 
 #header_area .col-md-9 ul li ul li:hover ul {
-    left: 200px;
+  left: 200px;
 }
 
 #header_area .col-md-9 ul li ul li:hover a {
-    background: var(--pink);
-    color: #fff;
+  background: var(--pink);
+  color: #fff;
 }
 
 #header_area .col-md-9 ul ul li:hover ul li a {
-    background: #262626;
-    color: #fff;
+  background: #262626;
+  color: #fff;
 }
 
 #header_area .col-md-9 ul ul li ul li a:hover {
-    background: var(--pink);
-    color: #fff;
+  background: var(--pink);
+  color: #fff;
 }
-
 
 /* Menu Position  */
 
-#header_area.left_menu .col-md-3{
-    order: 2;
+#header_area.left_menu .col-md-3 {
+  order: 2;
 }
 #header_area.left_menu .col-md-9 {
-    order: 1;
+  order: 1;
 }
 #header_area.left_menu .col-md-9 ul {
-    text-align: left;
+  text-align: left;
 }
 
-#header_area.center_menu .col-md-3  {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
+#header_area.center_menu .col-md-3 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-#header_area.center_menu .col-md-9  {
-    width: 100%;
+#header_area.center_menu .col-md-9 {
+  width: 100%;
 }
 
-#header_area.center_menu .col-md-9  ul {
-    text-align: center;
+#header_area.center_menu .col-md-9 ul {
+  text-align: center;
 }
-#header_area.center_menu .col-md-9  ul ul {
-    text-align: left;
+#header_area.center_menu .col-md-9 ul ul {
+  text-align: left;
 }
 
 /*================================
 Index Page Style
 ==================================*/
-#body_area{
-    padding: 45px 0;
+#body_area {
+  padding: 45px 0;
 }
 
 #body_area .blog_area {
-    width: 100%;
-    margin-bottom: 15px;
-    background: #fff;
-    padding: 15px;
-    box-shadow: 0px 0px 10px #ddd;
+  width: 100%;
+  margin-bottom: 15px;
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0px 0px 10px #ddd;
 }
 #body_area .post_thumb {
-    width: 100%;
-    margin-bottom: 15px;
-    overflow: hidden;
+  width: 100%;
+  margin-bottom: 15px;
+  overflow: hidden;
 }
 #body_area .post_thumb img {
-    width: 100%;
-    display: block;
-    transition: .5s;
+  width: 100%;
+  display: block;
+  transition: 0.5s;
 }
 #body_area .post_thumb img:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 #body_area .post_details {
-    width: 100%;
-    margin-bottom: 15px;
+  width: 100%;
+  margin-bottom: 15px;
 }
 #body_area .post_details h2 {
-    font-size: 30px;
-    font-weight: 700;
+  font-size: 30px;
+  font-weight: 700;
 }
-#body_area .post_details h2 a{
-    color: #262626;
-    text-decoration: none;
-    transition: .5s;
+#body_area .post_details h2 a {
+  color: #262626;
+  text-decoration: none;
+  transition: 0.5s;
 }
-#body_area .post_details h2 a:hover{
-    color: var(--pink);
+#body_area .post_details h2 a:hover {
+  color: var(--pink);
 }
 
 /*================================
 Sidebar Area Style
 ==================================*/
-.child_sidebar{
-    margin-bottom: 20px;
+.child_sidebar {
+  margin-bottom: 20px;
 }
 .child_sidebar h2 {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 1em;
-    margin-bottom: 0;
-    border-left: 7px solid var(--pink);
-    padding-left: 15px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1em;
+  margin-bottom: 0;
+  border-left: 7px solid var(--pink);
+  padding-left: 15px;
 }
 
-.child_sidebar input[type="search"]{
-    background: #fff;
-    border : 1px solid #ddd;
-    padding : 10px;
+.child_sidebar input[type="search"] {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
 }
 
 .child_sidebar button[type="submit"] {
-    background: var(--pink);
-    color: #fff;
-    border: 1px solid var(--pink);
-    padding: 10px;
-    margin: 0;
-    transition: .5s;
+  background: var(--pink);
+  color: #fff;
+  border: 1px solid var(--pink);
+  padding: 10px;
+  margin: 0;
+  transition: 0.5s;
 }
 
-.child_sidebar button[type="submit"]:hover{
-    background: #262626;
-    border: 1px solid #262626;
+.child_sidebar button[type="submit"]:hover {
+  background: #262626;
+  border: 1px solid #262626;
 }
 
 .child_sidebar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
 }
 
 .child_sidebar ul li {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .child_sidebar ul li a {
-    color: #262626;
-    display: inline-block;
-    text-decoration: none;
+  color: #262626;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .child_sidebar ul li a:hover {
-    color: var(--pink);
+  color: var(--pink);
 }
 
 .child_sidebar a.tag-cloud-link {
-    color: #fff;
-    background: var(--pink);
-    display: inline-block;
-    font-size: 12px !important;
-    text-decoration: none;
-    padding: 5px;
-    margin-bottom: 5px;
+  color: #fff;
+  background: var(--pink);
+  display: inline-block;
+  font-size: 12px !important;
+  text-decoration: none;
+  padding: 5px;
+  margin-bottom: 5px;
 }
 
 .child_sidebar a.tag-cloud-link:hover {
-    background: #262626;
+  background: #262626;
 }
 
 /*================================
 Post Page Pagination Style
 ==================================*/
 
-#page_nav p.pages{
-    background-color: var(--pink);
-    color: #fff;
-    padding: 5px 10px;
+#page_nav p.pages {
+  background-color: var(--pink);
+  color: #fff;
+  padding: 5px 10px;
 }
 
-#page_nav p.pages span{
-    display: inline-block;
-    padding: 0 5px;
+#page_nav p.pages span {
+  display: inline-block;
+  padding: 0 5px;
 }
 
-#page_nav .page-numbers{
-    background: var(--pink);
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    padding: 5px 10px;
-    margin-right: 5px;
-    transition: .5s;
+#page_nav .page-numbers {
+  background: var(--pink);
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  transition: 0.5s;
 }
 
-#page_nav .page-numbers.current, #page_nav .page-numbers:hover{
-    background-color: #252323;
+#page_nav .page-numbers.current,
+#page_nav .page-numbers:hover {
+  background-color: #252323;
 }
 
 /*===========================================
   Archive and Search Styling
 ===========================================*/
-.archive_title, .search_title {
-    background: var(--pink);
-    color: #fff;
-    padding: 10px;
-    margin-bottom: 10px;
+.archive_title,
+.search_title {
+  background: var(--pink);
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-.archive_title h1, .search_title h1 {
-    font-size: 20px;
+.archive_title h1,
+.search_title h1 {
+  font-size: 20px;
 }
 
 /*================================
 Footer Area Style
 ==================================*/
-#footer{
-    background: #262626;
-    color: #fff;
-    padding: 40px 20px;
-    border-bottom: 1px solid #ddd;
+#footer {
+  background: #262626;
+  color: #fff;
+  padding: 40px 20px;
+  border-bottom: 1px solid #ddd;
 }
 
 #footer .child_sidebar ul li a {
-    color: #fff;
+  color: #fff;
 }
 
 #footer .child_sidebar ul ul {
-    display: none;
+  display: none;
 }
 
-
 /* Copyright Section */
-#copyright_area{
-    background-color: #252323;
-    padding: 20px 0;
-    color: #fff;
-    text-align: center;
+#copyright_area {
+  background-color: #252323;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
 }
 
 /*===========================================
   Comment Area Styling
 ===========================================*/
 #comments_area h3 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0;
 }
 
 #comments_area label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 700;
-    font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 #comments_area input[type="checkbox"] {
-    display: inline-block;
-    width: auto;
+  display: inline-block;
+  width: auto;
 }
 
 #comments_area textarea,
 #comments_area input {
-    border: 1px solid #ddd;
-    width: 100%;
-    padding: 15px;
+  border: 1px solid #ddd;
+  width: 100%;
+  padding: 15px;
 }
 
 #comments_area textarea {
-    min-height: 150px;
+  min-height: 150px;
 }
 
 /* ==========================================================================
    Comments Area
 ========================================================================== */
 .comments-area {
-    background: #fff none repeat scroll 0 0;
-    clear: both;
-    margin: 20px auto 0;
-    padding: 20px;
-    position: relative;
-    width: 100%;
+  background: #fff none repeat scroll 0 0;
+  clear: both;
+  margin: 20px auto 0;
+  padding: 20px;
+  position: relative;
+  width: 100%;
 }
 
 .comments-title {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .comment-list,
 .comment-list .children {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .comment-list li:before {
-    display: none;
+  display: none;
 }
 
 .comment-body {
-    margin-bottom: 20px;
-    margin-left: 65px;
+  margin-bottom: 20px;
+  margin-left: 65px;
 }
 
 .comment-author {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 5px;
-    position: relative;
-    z-index: 2;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 2;
 }
 
 .comment-author a {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 5px;
-    position: relative;
-    z-index: 2;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 2;
 }
 
 .comment-author .avatar {
-    height: 50px;
-    left: -65px;
-    position: absolute;
-    width: 50px;
+  height: 50px;
+  left: -65px;
+  position: absolute;
+  width: 50px;
 }
 
 .comment-author .says {
-    display: none;
+  display: none;
 }
 
 .comment-meta {
-    color: #c4c4c4;
-    font-size: 12px;
-    font-weight: 700;
-    margin-bottom: 8px;
+  color: #c4c4c4;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .comment-metadata {
-    color: #767676;
-    font-size: 10px;
-    font-size: 0.625rem;
-    font-weight: 800;
-    letter-spacing: 0.1818em;
-    text-transform: uppercase;
+  color: #767676;
+  font-size: 10px;
+  font-size: 0.625rem;
+  font-weight: 800;
+  letter-spacing: 0.1818em;
+  text-transform: uppercase;
 }
 
 .comment-metadata a {
-    color: #767676;
+  color: #767676;
 }
 
 .comment-metadata a.comment-edit-link {
-    color: #222;
-    margin-left: 1em;
+  color: #222;
+  margin-left: 1em;
 }
 
 .comment-body {
-    color: #333;
-    font-size: 14px;
+  color: #333;
+  font-size: 14px;
 }
 
 .comment-reply-link {
-    font-weight: 800;
-    position: relative;
+  font-weight: 800;
+  position: relative;
 }
 
 .comment-reply-link .icon {
-    color: #222;
-    left: -2em;
-    height: 1em;
-    position: absolute;
-    top: 0;
-    width: 1em;
+  color: #222;
+  left: -2em;
+  height: 1em;
+  position: absolute;
+  top: 0;
+  width: 1em;
 }
 
 .children .comment-author .avatar {
-    height: 30px;
-    left: -45px;
-    width: 30px;
+  height: 30px;
+  left: -45px;
+  width: 30px;
 }
 
-.bypostauthor>.comment-body>.comment-meta>.comment-author .avatar {
-    border: 1px solid #333;
-    padding: 2px;
+.bypostauthor > .comment-body > .comment-meta > .comment-author .avatar {
+  border: 1px solid #333;
+  padding: 2px;
 }
 
 .no-comments,
 .comment-awaiting-moderation {
-    color: #767676;
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-style: italic;
+  color: #767676;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-style: italic;
 }
 
 .comments-pagination {
-    margin: 2em 0 3em;
+  margin: 2em 0 3em;
 }
 
 .form-submit {
-    text-align: left;
+  text-align: left;
 }
 
 .form-submit #submit {
-    width: auto;
+  width: auto;
 }
 
 .comment-form #wp-comment-cookies-consent {
-    margin: 0 10px 0 0;
+  margin: 0 10px 0 0;
 }
 
 .comment-form .comment-form-cookies-consent label {
-    display: inline;
+  display: inline;
 }
 
 /* ==========================================================================
    Slider Area
 ========================================================================== */
-#slider_area .slider img{
-    width: 100%;
-    height: auto;
+#slider_area .slider img {
+  width: 100%;
+  height: auto;
 }
 /* ==========================================================================
    Service/front page Area
 ========================================================================== */
 
 #service_area {
-    padding: 45px 0;
+  padding: 45px 0;
 }
 
 #service_area .child_service {
-    background: #ddd;
-    box-shadow: 0 0 10px #ddd;
-    padding: 15px;
-    border-radius: 15px;
+  background: #ddd;
+  box-shadow: 0 0 10px #ddd;
+  padding: 15px;
+  border-radius: 15px;
 }

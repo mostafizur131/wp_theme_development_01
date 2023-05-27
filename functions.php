@@ -22,5 +22,9 @@ include_once('inc/widgets_register.php');
 
 //Custom Post or Services Register
 include_once('inc/custom_post.php');
+
 //Custom Shortcode Register
 include_once('inc/shortcode.php');
+
+//Custom Theme Option
+include_once('inc/theme-option/admin_theme_option.php');
