@@ -4,9 +4,16 @@
 add_theme_support('title-tag');
 
 //Theme Post Thumbnails
-add_theme_support('post_thumbnails', array('post', 'page', 'service'));
-add_image_size('post_thumbnails', 970, 350, true);
+add_theme_support('post-thumbnails', array('post', 'page', 'service'));
+add_image_size('post-thumbnails', 970, 350, true);
 add_image_size('slider', 1920, 600, true);
+
+function my_theme_setup()
+{
+    add_theme_support('post-thumbnails');
+    add_theme_support('post-formats', array('gallery', 'audio', 'video', 'aside', 'image'));
+}
+add_action('after_setup_theme', 'my_theme_setup');
 
 //Excerpt 40 word
 function mr_excerpt_more($more)

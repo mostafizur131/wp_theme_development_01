@@ -26,3 +26,11 @@ function mr_add_google_fonts()
     wp_enqueue_style('mr_google_fonts', 'https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Oswald&display=swap', false);
 }
 add_action('wp_enqueue_scripts', 'mr_add_google_fonts');
+
+
+//Dashicons fixing
+function dashicons_load_issue()
+{
+    wp_enqueue_style('dashicons');
+}
+add_action('wp_enqueue_scripts', 'dashicons_load_issue');

@@ -4,8 +4,8 @@ if (have_posts()) :
         the_post();
 ?>
         <div class="blog_area">
+            <span class="dashicons dashicons-format-<?php echo get_post_format($post->ID) ?>"></span>
             <div class="post_thumb">
-
                 <a href="<?php the_permalink(); ?>"><?php echo the_post_thumbnail('post_thumbnails'); ?></a>
             </div>
             <div class="post_details">

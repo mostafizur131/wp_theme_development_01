@@ -14,7 +14,9 @@
             <div class="col-md-9">
                 <?php get_template_part('/template_parts/post_setup') ?>
                 <div id="comments_area">
-                    <?php comments_template(); ?>
+                    <?php if (comments_open()) : ?>
+                        <?php comments_template(); ?>
+                    <?php endif; ?>
                 </div>
 
             </div>
